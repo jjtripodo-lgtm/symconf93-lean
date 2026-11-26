@@ -1,0 +1,38 @@
+version: v0.4
+project:
+  name: "Nonexistence of an unrestricted symmetric configuration 93_10"
+  description: >-
+    No 93 by 93 zero-one incidence matrix has all row and column sums 10
+    and pairwise row intersections of size at most one. There is no group
+    action, automorphism or cyclicity hypothesis.
+  authors: ["John Tripodo"]
+  responsible_maintainers: ["John Tripodo"]
+  license: Apache-2.0
+classification:
+  arxiv: [math.CO]
+  msc2020: ["05B30"]
+sources:
+  - title: "There is no symmetric configuration 93_10"
+    authors: ["John Tripodo"]
+    type: manuscript
+    relationship: formalizes
+    note: "Manuscript statement and formal theorem concern the same unrestricted incidence matrix. The original proof archive is linked in the README."
+related_formalizations: []
+status:
+  scope: "Nonexistence at 93 points, 93 lines and degree ten. No other order or degree is claimed."
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Classical.choice, Quot.sound]
+  main_results:
+    - declaration: PalomarSymconf.no_configuration_93_10
+      file: Solution.lean
+      sorry_count: 0
+      axioms: [propext, Classical.choice, Quot.sound]
+      comparator_config: comparator.json
+automation:
+  methods:
+    - method: agent
+      tool_setup: "AI-assisted proof construction, porting and verification preparation."
+review:
+  status: unchecked
+  notes: "No external registry review or registration is claimed by this package."

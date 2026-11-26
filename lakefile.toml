@@ -1,0 +1,32 @@
+name = "symconf93_palomar"
+version = "0.1.0"
+defaultTargets = ["Challenge", "Solution"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "065356127b1dc0016f66b7283ce0ce2c4055aa55"
+
+[[lean_lib]]
+name = "Symconf59"
+globs = ["Symconf59.+"]
+
+
+
+[[lean_lib]]
+name = "Challenge"
+
+
+[[lean_lib]]
+name = "Solution"
+
+
+[[lean_lib]]
+name = "Symconf93"
+globs = ["Symconf93.+"]
+
+[[lean_lib]]
+name = "Symconf93DegreeNormalize"
+
+[[lean_lib]]
+name = "Symconf93OffsetMoments"
